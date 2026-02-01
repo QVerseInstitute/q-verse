@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Q-Verse — Приватный Minecraft сервер</title>
+    <link rel="shortcut icon" href="/assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/poses.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/realms.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="header-left">
+        <a href="/">
+            <img src="/assets/logo.png" alt="Q-Verse" class="logo">
+        </a>
+    </div>
+
+    <nav class="nav">
+        <a href="/" class="active">Главная</a>
+        <a href="/about/">О сервере</a>
+        <a href="/rules/">Правила</a>
+        <a href="/wiki/">Вики</a>
+    </nav>
+
+    <div class="header-right links">
+        <a href="http://discord.gg/GWVaEAGXRu"><img src="assets/discord.png" alt="Discord" class="icon"></a>
+        <a href="https://t.me/qverse_smp"><img src="assets/telegram.png" alt="Telegram" class="icon"></a>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <img src="assets/large-logo.png" alt="Q-Verse_big-logo" class="big-logo">
+
+        <h1>Приватный Minecraft SMP</h1>
+        <p>
+            Мир без вайпов, где история появляется не по сценарию, <br>
+            а из решений и конфликтов самих игроков.
+        </p>
+
+        <div class="hero-actions">
+            <a href="http://discord.gg/GWVaEAGXRu">
+                <button class="btn apply">Подать заявку</button>
+            </a>
+            
+            <button class="ip-box glass" data-ip="q-verse.minerent.io">
+                <span class="ip-text">q-verse.minerent.io</span>
+                <span class="ip-icon">⧉</span>
+            </button>
+        </div>
+
+        <div class="hero-download">
+            <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">
+                <button class="btn ghost">Скачать сборку</button>
+            </a>
+        </div>
+        <p> <br> Fabric · 1.21.9 · Java Edition</p>
+    </section>
+
+    <section class="section">
+        <h2>Как попасть на сервер?</h2>
+
+        <div class="cards">
+            <div class="card glass">
+                <img src="assets/number-1.png" alt="Шаг 1">
+                <h3>Подайте заявку</h3>
+                <img src="assets/poses/liquorWbook.png" class="pose">
+                <p>
+                    Расскажите о себе и своих планах на сервер. <br>
+                    Заявки подаются через Discord и рассматриваются вручную.
+                </p>
+            </div>
+
+            <div class="card glass">
+                <img src="assets/number-2.png" alt="Шаг 2">
+                <h3>Дождитесь одобрения</h3>
+                <img src="assets/poses/liquorWaiting.png" class="pose">
+                <p>
+                    Важно, чтобы новые игроки подходили по настрою и интересам.
+                </p>
+            </div>
+
+            <div class="card glass">
+                <img src="assets/number-3.png" alt="Шаг 3">
+                <h3>Начните игру</h3>
+                <img src="assets/poses/liquorPlaying.png" class="pose">
+                <p>
+                    После одобрения вы получите доступ к серверу<br>
+                    и сможете начать игру в общем мире.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="realms">
+        <h2 class="section-title">Слои реальности мира Q-Verse</h2>
+        <p class="section-subtitle">
+            Слои реальности - это нестабильные пласты мира, существующие параллельно основной реальности. <br>
+            Они подчиняются иным законам генерации, навигации и выживания.
+        </p>
+
+        <div class="realm-tabs">
+            <button class="realm-tab active"
+                data-realm="sculk"
+                data-color="#3ccfcf"
+                data-character="assets/characters/quoiStanding.png">
+                Скалковая Бездна
+            </button>
+
+            <button class="realm-tab"
+                data-realm="amplified"
+                data-color="#8F0B13"
+                data-character="assets/characters/liquor_standing.png">
+                Возвышенный Слой
+            </button>
+
+            <button class="realm-tab"
+                data-realm="beta_dim"
+                data-color="#6b8f2a"
+                data-character="assets/characters/capls_standing.png">
+                Первозданный Слой
+            </button>
+        </div>
+
+
+        <div class="realm-layout">
+            <div class="realm-card">
+                <div class="realm-content active" id="sculk">
+                    <h3>Скалковая Бездна</h3>
+
+                    <p>
+                        <strong>Тип слоя:</strong> заражённый / враждебный<br>
+                        <strong>Статус:</strong> высокоопасный
+                    </p>
+
+                    <p>
+                        <strong>Скалковая Бездна</strong> — слой реальности, полностью поглощённый скалком.
+                        Он считается результатом неконтролируемого распространения древней формы жизни,
+                        реагирующей на звук, движение и присутствие живых существ.
+                    </p>
+
+                    <p>
+                        Поверхность и недра слоя покрыты скалковыми структурами, а сам мир постоянно
+                        «слушает» происходящее внутри него.
+                    </p>
+
+                    <h4>Особенности</h4>
+                    <ul>
+                        <li>Повсеместное распространение скалка</li>
+                        <li>Высокая концентрация Варденов</li>
+                        <li>Ограниченная видимость и ориентация</li>
+                        <li>Ценный лут в сундуках и структурах</li>
+                    </ul>
+
+                    <h4>Доступ</h4>
+                    <ul>
+                        <li>Только через Резонансный камень</li>
+                        <li>Прямые порталы отсутствуют</li>
+                    </ul>
+
+                    <p>
+                        <strong>Примечание:</strong>
+                        Скалковая Бездна не предназначена для постоянного пребывания.
+                        Шум и беспечность здесь почти всегда заканчиваются гибелью.
+                    </p>
+                </div>
+
+
+                <div class="realm-content" id="amplified">
+                    <h3>Возвышенный Слой</h3>
+
+                    <p class="realm-meta">
+                        <strong>Тип слоя:</strong> искажённый<br>
+                        <strong>Статус:</strong> исследовательский
+                    </p>
+
+                    <p>
+                        Возвышенный Слой представляет собой отражение Верхнего мира,
+                        зафиксированное до Великого Раскола (эпоха до 1.18).
+                    </p>
+
+                    <p>
+                        Ландшафт здесь подчиняется старым законам формирования реальности,
+                        что приводит к резким перепадам высот и экстремальной геометрии мира.
+                    </p>
+
+                    <h4>Особенности</h4>
+                    <ul>
+                        <li>Экстремальная вертикальность рельефа</li>
+                        <li>Генерация старого образца (без современных пещер)</li>
+                        <li>Повышенный риск падений</li>
+                        <li>Сложная навигация</li>
+                    </ul>
+
+                    <h4>Доступ</h4>
+                    <ul>
+                        <li>Через Портал Возвышенного Слоя</li>
+                        <li>Подробная активация описана в вики</li>
+                    </ul>
+
+                    <p>
+                        <strong>Примечание:</strong>
+                        Слой не рекомендуется для новичков и плохо подходит
+                        для постоянных поселений.
+                    </p>
+                </div>
+
+                <div class="realm-content" id="beta_dim">
+                    <h3>Первозданный Слой</h3>
+
+                    <p class="realm-meta">
+                        <strong>Тип слоя:</strong> архивный<br>
+                        <strong>Статус:</strong> нестабильный
+                    </p>
+
+                    <p>
+                        Первозданный Слой — это фрагмент реальности, застывший
+                        в одной из ранних форм мироздания (Beta 1.7.3).
+                    </p>
+
+                    <p>
+                        Он отражает эпоху, когда структура мира ещё не была стабилизирована,
+                        а границы пространства могли нарушаться.
+                    </p>
+
+                    <h4>Особенности</h4>
+                    <ul>
+                        <li>Старая генерация ландшафта</li>
+                        <li>Возможные аномалии рельефа</li>
+                        <li>Потенциальное появление Далёких Земель</li>
+                    </ul>
+
+                    <h4>Доступ</h4>
+                    <ul>
+                        <li>Через Первозданный портал</li>
+                        <li>Подробная активация описана в вики</li>
+                    </ul>
+
+                    <p>
+                        <strong>Примечание:</strong>
+                        Слой нестабилен и плохо предсказуем.
+                        Используется преимущественно для временных операций.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="realm-character">
+                <img id="realmCharacter" src="assets/characters/quoiStanding.png" alt="Observer">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+            <div class="footer-title">Q-Verse • SMP</div>
+            <div class="footer-desc">
+                Приватный Minecraft SMP без вайпов, <br>
+                ориентированный на долгосрочную игру и взаимодействие.
+            </div>
+        </div>
+
+        <nav class="footer-links">
+            <a href="#">Главная</a>
+            <a href="about/">О сервере</a>
+            <a href="rules/">Правила</a>
+            <a href="wiki/">Вики</a> 
+            <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">Скачать сборку</a>
+        </nav>
+        <nav>
+            
+        </nav>
+
+        <nav class="links">
+            <a href="http://discord.gg/GWVaEAGXRu"><img src="assets/discord.png" alt="Discord" class="icon"></a>
+            <a href="https://t.me/qverse_smp"><img src="assets/telegram.png" alt="Telegram" class="icon"></a>
+        </nav>
+
+        <div class="footer-meta">
+            <div>Minecraft Java Edition · Fabric 1.21.9 · Без вайпов</div>
+            <div class="footer-copy">© 2026 Q-Verse <br> 
+                Made with <a class="red-glowing">❤️</a> by QuØi(¿!)™</div>
+        </div>
+
+        <div class="footer-disclaimer">
+            ⚠️ Not an official Minecraft product.
+            Not approved by or associated with Mojang Synergies AB or Microsoft Corporation. ⚠️
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/header.js"></script>
+<script src="js/realms.js"></script>
+<script src="js/ipbox.js"></script>
+</body>
+</html>

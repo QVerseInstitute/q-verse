@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 48px;
+
+    background: rgba(10, 8, 7, 0.35);
+    backdrop-filter: blur(8px);
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100;
+}
+
+.header.scrolled {
+    background: rgba(10, 8, 7, 0.75);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav a {
+    position: relative;
+    color: #EFDFC5;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition:
+        color 0.25s ease,
+        text-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.nav a:hover {
+    color: #8f0b13;
+
+    text-shadow:
+        0 0 6px rgba(192, 21, 28, 0.6),
+        0 0 12px rgba(192, 21, 28, 0.4),
+        0 0 24px rgba(192, 21, 28, 0.2);
+
+    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+}
+
+.nav a.active {
+    color: #8f0b13;
+
+    text-shadow:
+        0 0 6px rgba(192, 21, 28, 0.6),
+        0 0 12px rgba(192, 21, 28, 0.4),
+        0 0 24px rgba(192, 21, 28, 0.2);
+
+    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+    pointer-events: none;
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+}
+
+.icon {
+    opacity: 0.7;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+}

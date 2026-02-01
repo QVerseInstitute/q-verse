@@ -1,0 +1,96 @@
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 0 24px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    max-width: 640px;
+    opacity: 0.85;
+    margin-bottom: 36px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-download {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.ip-box {
+    padding: 14px 28px;
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #EFDFC5;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ip-box:hover {
+    border-color: rgba(143, 11, 19, 0.6);
+    box-shadow: 0 0 18px rgba(143, 11, 19, 0.35);
+}
+
+
+.ip-box:active {
+    transform: translateY(1px);
+}
+
+.ip-box.copied {
+    background: rgba(143, 11, 19, 0.25);
+    border-color: rgba(143, 11, 19, 0.6);
+    box-shadow: 0 0 0 1px rgba(143, 11, 19, 0.4);
+}
+
+.ip-box.copied .ip-icon {
+    opacity: 1;
+}
+
+.big-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px 80px;
+        text-align: center;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .big-logo {
+        max-width: 220px;
+    }
+}

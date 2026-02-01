@@ -1,0 +1,55 @@
+.wip-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.wip-card {
+    max-width: 720px;
+    width: 100%;
+    padding: 36px 32px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.wip-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.wip-status {
+    opacity: 0.85;
+    margin-bottom: 28px;
+}
+
+.wip-visual {
+    margin: 0 auto 28px;
+    max-width: 420px;
+}
+
+.wip-render {
+    width: 100%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+}
+
+.wip-description {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 28px;
+}
+
+.wip-description p + p {
+    margin-top: 10px;
+}
+
+.wip-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
