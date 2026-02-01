@@ -90,3 +90,20 @@ h2 {
         font-size: 0.95rem;
     }
 }
+
+.inline-link {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding: 0 2px;
+}
+.inline-link:hover {
+    color: #8f0b13;
+
+    text-shadow:
+        0 0 6px rgba(192, 21, 28, 0.6),
+        0 0 12px rgba(192, 21, 28, 0.4),
+        0 0 24px rgba(192, 21, 28, 0.2);
+
+    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+}
