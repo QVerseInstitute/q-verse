@@ -1,195 +1,234 @@
 .realms {
-    padding: 120px 20px;
-    text-align: center;
-    --realm-accent: #8F0B13;
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  --realm-accent: #8f0b13;
+}
+
+.realms::before {
+  content: "";
+  position: absolute;
+  inset: 20px 0 auto;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(239, 223, 197, 0.15),
+    transparent
+  );
+}
+
+.section-title {
+  margin-bottom: 14px;
+}
+
+.section-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(239, 223, 197, 0.72);
+  line-height: 1.75;
 }
 
 .realm-tabs {
-    margin: 40px auto;
-    display: inline-flex;
-    gap: 8px;
+  margin: 40px auto;
+  display: inline-flex;
+  gap: 8px;
 
-    padding: 8px;
-    border-radius: 999px;
+  padding: 8px;
+  border-radius: 999px;
 
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
 }
 
 .realm-tab {
-    padding: 10px 18px;
-    border-radius: 999px;
+  padding: 10px 18px;
+  border-radius: 999px;
 
-    background: transparent;
-    border: none;
-    cursor: pointer;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 
-    color: rgba(239, 223, 197, 0.7);
-    font-weight: 500;
+  color: rgba(239, 223, 197, 0.7);
+  font-weight: 500;
 
-    transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .realm-tab:hover {
-    color: #efdfc5;
+  color: #efdfc5;
 }
 
 .realm-tab.active {
-    background: rgba(143, 11, 19, 0.25);
-    color: #efdfc5;
+  background: rgba(143, 11, 19, 0.25);
+  color: #efdfc5;
 
-    box-shadow:
-        0 0 15px rgba(143, 11, 19, 0.6);
+  box-shadow: 0 0 15px rgba(143, 11, 19, 0.6);
 }
 
 .realm-layout {
-    max-width: 1100px;
-    margin: 0 auto;
+  max-width: 1100px;
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: 1fr 320px;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 460px);
+  gap: 20px;
 
-    align-items: center;
+  align-items: center;
 }
 
 .realm-card {
-    padding: 32px;
-    border-radius: 20px;
+  position: relative;
+  padding: 32px;
+  border-radius: 28px;
 
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.06),
-        rgba(255, 255, 255, 0.02)
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.02)
+  );
 
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-    text-align: left;
+  text-align: left;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
 }
 
 .realm-content {
-    display: none;
+  display: none;
 }
 
 .realm-content.active {
-    display: block;
+  display: block;
 }
 
 .realm-content h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.realm-content h4 {
+  margin: 22px 0 12px;
+  color: #efdfc5;
+  font-size: 1rem;
 }
 
 .realm-content p {
-    color: rgba(239, 223, 197, 0.75);
-    line-height: 1.6;
+  color: rgba(239, 223, 197, 0.75);
+  line-height: 1.6;
 }
 
 .realm-character {
-    position: relative;
-    height: 420px;
+  position: relative;
+  width: min(100%, 440px);
+  height: 560px;
+  margin: 0 auto;
+  left: -12px;
 }
 
 .realm-character img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
 
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 
-    filter:
-        drop-shadow(0 20px 60px rgba(0, 0, 0, 0.8));
+  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.35));
 }
 
 .realm-tab.active {
-    background: color-mix(
-        in srgb,
-        var(--realm-accent) 25%,
-        transparent
-    );
+  background: color-mix(in srgb, var(--realm-accent) 25%, transparent);
 
-    color: #efdfc5;
+  color: #efdfc5;
 
-    box-shadow:
-        0 0 18px color-mix(
-            in srgb,
-            var(--realm-accent) 70%,
-            transparent
-        );
+  box-shadow: 0 0 18px color-mix(in srgb, var(--realm-accent) 70%, transparent);
 }
 
 .realm-character::before {
-    content: "";
-    position: absolute;
-    inset: -40px;
+  content: "";
+  position: absolute;
+  inset: -40px;
 
-    background:
-        radial-gradient(
-            circle at 30% 40%,
-            color-mix(in srgb, var(--realm-accent) 35%, transparent),
-            transparent 60%
-        ),
-        url("noise.png");
+  background:
+    radial-gradient(
+      circle at 30% 40%,
+      color-mix(in srgb, var(--realm-accent) 35%, transparent),
+      transparent 60%
+    ),
+    url("noise.png");
 
-    opacity: 0.25;
-    filter: blur(12px);
-    z-index: -1;
-    pointer-events: none;
+  opacity: 0.25;
+  filter: blur(12px);
+  z-index: -1;
+  pointer-events: none;
 
-    animation: realmPulse 6s ease-in-out infinite;
+  animation: realmPulse 6s ease-in-out infinite;
 }
 
 @keyframes realmPulse {
-    0%   { opacity: 0.18; }
-    50%  { opacity: 0.35; }
-    100% { opacity: 0.18; }
+  0% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0.18;
+  }
 }
 
 .realm-character img {
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .realm-character img.visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 .realm-content ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 .realm-content li::before {
-    content: "• ";
-    color: var(--realm-accent);
+  content: " • ";
+  color: var(--realm-accent);
 }
 
 .realm-content p {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 @media (max-width: 768px) {
-    .realm-layout {
-        grid-template-columns: 1fr;
-    }
+  .realm-layout {
+    grid-template-columns: 1fr;
+  }
 
-    .realm-character {
-        order: -1;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 24px;
-    }
+  .realm-character {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    width: min(100%, 360px);
+    height: 420px;
+    left: 0;
+    margin-bottom: 24px;
+  }
 
-    .realm-character img {
-        max-width: 200px;
-    }
+  .realm-character img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
 
-    .realm-tabs {
-        overflow-x: auto;
-        gap: 8px;
-    }
+  .realm-tabs {
+    overflow-x: auto;
+    gap: 8px;
+  }
 }

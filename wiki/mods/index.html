@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Q-Verse — Вики</title>
+    <title>Q-Verse — Моды сервера</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/assets/logo.png" />
 
@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="stylesheet" href="/css/cards.css" />
     <link rel="stylesheet" href="/css/wiki.css" />
   </head>
-  <body data-wiki-mode="hub" data-wiki-source="/wiki/data/index.json">
+  <body data-wiki-mode="article" data-wiki-source="/wiki/data/mods.json">
     <header class="header" id="header">
       <div class="header-left">
         <a href="/">
@@ -40,54 +39,73 @@
     <main class="page-main wiki-page">
       <section class="page-header section">
         <div class="page-header-card panel wiki-hero">
-          <p id="wikiHubEyebrow" class="page-eyebrow">Q-Verse Archive</p>
-          <h1 id="wikiHubTitle">Вики Q-Verse</h1>
-          <p id="wikiHubLead" class="page-lead wiki-lead">
-            База знаний о мире, истории, государствах, фракциях и устройстве
-            сервера.
+          <p id="wikiArticleEyebrow" class="page-eyebrow">Server Systems</p>
+          <h1 id="wikiArticleTitle">Моды сервера</h1>
+          <p id="wikiArticleLead" class="page-lead wiki-lead">
+            Справка по модам Q-Verse: какие механики они добавляют, на что
+            влияют и какие новые возможности открывают игрокам.
           </p>
 
-          <div class="page-actions">
-            <a href="/wiki/timeline">
-              <button class="btn primary">Открыть таймлайн</button>
+          <div id="wikiArticleActions" class="page-actions">
+            <a href="/wiki">
+              <button class="btn primary">Назад в вики</button>
             </a>
-            <a href="#wiki-library">
-              <button class="btn ghost">Открыть библиотеку</button>
+            <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">
+              <button class="btn ghost">Открыть сборку</button>
             </a>
           </div>
         </div>
       </section>
 
-      <section class="section wiki-overview-section">
-        </p>
-        <div id="wikiFeatured" class="cards wiki-featured"></div>
+      <section class="section wiki-facts-section">
+        <div id="wikiArticleFacts" class="wiki-facts"></div>
       </section>
 
-      <section class="section" id="wiki-library">
-        <div class="panel wiki-library">
+      <section class="wiki-article-layout section">
+        <aside class="wiki-sidebar panel">
+          <h2>Инструменты</h2>
+          <label class="wiki-search wiki-search-article">
+            <span class="wiki-search-label">Поиск по статье</span>
+            <input
+              id="wikiArticleSearch"
+              class="wiki-search-input"
+              type="search"
+              placeholder="Моды, механики, блоки, предметы..."
+            />
+          </label>
+          <p id="wikiArticleSummary" class="wiki-sidebar-note">
+            Загрузка...
+          </p>
+        </aside>
+
+        <section class="wiki-article-content">
+          <div id="wikiArticleIntroCard" class="wiki-note panel">
+            Эта статья загружается из JSON-файла и поддерживает навигацию по
+            разделам, быстрые факты и фильтрацию содержимого.
+          </div>
+
+          <div id="wikiArticleContent" class="wiki-sections"></div>
+        </section>
+
+        <aside class="wiki-sidebar panel wiki-sidebar-right">
+          <h2>Навигация</h2>
+          <p class="wiki-sidebar-note">
+            Быстрые переходы по разделам статьи о модах и механиках сервера.
+          </p>
+          <nav id="wikiArticleNav" class="wiki-nav"></nav>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="panel wiki-related-shell">
           <div class="wiki-library-head">
             <div>
-              <p class="section-label">Библиотека</p>
-              <h2>Материалы вики</h2>
+              <p class="section-label">Связанные материалы</p>
+              <h2>Что открыть дальше</h2>
             </div>
-            <p id="wikiHubSummary" class="wiki-summary">Загрузка...</p>
           </div>
 
-          <div class="wiki-toolbar">
-            <label class="wiki-search">
-              <span class="wiki-search-label">Поиск</span>
-              <input
-                id="wikiHubSearch"
-                class="wiki-search-input"
-                type="search"
-                placeholder="Название, описание, теги..."
-              />
-            </label>
-
-            <div id="wikiCategoryFilters" class="wiki-filters"></div>
-          </div>
-
-          <div id="wikiEntries" class="wiki-entry-grid"></div>
+          <div id="wikiArticleRelated" class="wiki-entry-grid"></div>
         </div>
       </section>
     </main>

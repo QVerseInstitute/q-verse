@@ -1,0 +1,277 @@
+{
+  "eyebrow": "Server Systems",
+  "title": "Моды сервера",
+  "lead": "Справка по модам Q-Verse: какие механики они добавляют, как меняют привычный Minecraft и какие новые возможности открывают игрокам.",
+  "intro": "Эта статья нужна как быстрый обзор модовой части сервера. Здесь удобно собирать не только список модов, но и их практическую пользу: какие блоки, предметы, крафты, механики автоматизации, строительства и исследования они привносят в мир.",
+  "searchPlaceholder": "Поиск по модам, механикам и предметам...",
+  "actions": [
+    {
+      "label": "Назад в вики",
+      "href": "/wiki",
+      "type": "primary"
+    },
+    {
+      "label": "Открыть сборку",
+      "href": "https://github.com/QVerseInstitute/Q-Verse-Modpack/releases",
+      "type": "ghost"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Тип статьи",
+      "value": "Справочник по модам"
+    },
+    {
+      "label": "Статус",
+      "value": "Актуально"
+    },
+    {
+      "label": "Для кого",
+      "value": "Новые и опытные игроки"
+    }
+  ],
+"sections": [
+    {
+      "id": "food",
+      "title": "1. Кулинария и еда",
+      "items": [
+        {
+          "title": "Farmer’s Delight",
+          "text": "Расширяет систему еды и готовки. Добавляет новые ингредиенты, блюда, кухонные блоки и цепочки крафта.",
+          "list": [
+            "Новые культуры и ингредиенты",
+            "Кухонные станции (разделочные доски, кастрюли)",
+            "Сложные рецепты блюд",
+            "Расширение фермерства и торговли едой"
+          ]
+        },
+        {
+          "title": "Аддоны",
+          "text": "Дополняют Farmer’s Delight новыми рецептами, продуктами и тематическими наборами еды.",
+          "list": [
+            "Дополнительные блюда",
+            "Новые ингредиенты",
+            "Расширенные цепочки крафта",
+            "Региональные и тематические кухни"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world",
+      "title": "2. Генерация и исследование",
+      "items": [
+        {
+          "title": "Nullscape",
+          "text": "Полностью перерабатывает генерацию Края, делая его более сложным и разнообразным."
+        },
+        {
+          "title": "Incendium",
+          "text": "Добавляет новые структуры, биомы и события в Нижний мир.",
+          "list": [
+            "Уникальные структуры",
+            "Новые враги и испытания",
+            "Повышенная ценность лута"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utility",
+      "title": "3. Полезные предметы и механики",
+      "items": [
+        {
+          "title": "Waystones",
+          "text": "Система телепортации между точками, созданными игроками.",
+          "list": [
+            "Установка точек перемещения",
+            "Быстрое перемещение по миру",
+            "Интеграция в инфраструктуру баз"
+          ]
+        },
+        {
+          "title": "VeinMiner",
+          "text": "Позволяет добывать целые жилы руды или деревья одним действием.",
+          "list": [
+            "Ускоренная добыча ресурсов",
+            "Экономия времени",
+            "Реализован через одноимённое зачарование"
+          ]
+        },
+        {
+          "title": "Tree Harvester",
+          "text": "Упрощает добычу деревьев, автоматически разрушая их целиком.",
+          "list": [
+            "Быстрая заготовка древесины",
+            "Упрощение игры"
+          ]
+        },
+        {
+          "title": "Copper Hopper",
+          "text": "Улучшенный вариант воронки с новыми возможностями.",
+          "list": [
+            "Гибкая настройка передачи предметов",
+            "Улучшенная сортировка ресурсов"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "building",
+      "title": "4. Строительство и декор",
+      "items": [
+        {
+          "title": "Armor Stand Editor",
+          "text": "Позволяет настраивать стойки для брони и создавать декоративные сцены.",
+          "list": [
+            "Позиционирование частей тела",
+            "Создание декораций",
+            "Использование в RP и дизайне"
+          ]
+        },
+        {
+          "title": "Item Signs",
+          "text": "Добавляет отображение предметов на табличках.",
+          "list": [
+            "Визуальная маркировка хранилищ",
+            "Создание декораций"
+          ]
+        },
+        {
+          "title": "Storage Delight",
+          "text": "Расширяет систему хранения предметов декоративными и функциональными блоками.",
+          "list": [
+            "Контейнеры и ящики",
+            "Интеграция с кухонными системами"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat",
+      "title": "5. Снаряжение и бой",
+      "items": [
+        {
+          "title": "Weapons Expanded",
+          "text": "Добавляет новые виды оружия и боевые возможности.",
+          "list": [
+            "Расширенный арсенал",
+            "Новые стили боя"
+          ]
+        },
+        {
+          "title": "Tool Trims",
+          "text": "Позволяет модифицировать инструменты по аналогии с бронёй.",
+          "list": [
+            "Кастомизация инструментов",
+            "Дополнительные бонусы"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "links",
+      "title": "6. Документация",
+      "items": [
+        {
+          "title": "Farmer’s Delight",
+          "link": "https://github.com/vectorwing/FarmersDelight/wiki"
+        },
+        {
+          "title": "Crate Delight",
+          "link": "https://github.com/axperty/cratedelight/wiki"
+        },
+        {
+          "title": "Display Delight Fabric",
+          "link": "https://modrinth.com/mod/display-delight-fabric"
+        },
+        {
+          "title": "Easter's Delight",
+          "link": "https://github.com/PhantomWing/EasterDelight/wiki"
+        },
+        {
+          "title": "Fright's Delight",
+          "link": "https://chefmooon.github.io/frightsdelight/wiki/1.21.1/home"
+        },
+        {
+          "title": "More Delight (for Farmer's Delight)",
+          "link": "https://github.com/axperty/moredelight/wiki"
+        },
+        {
+          "title": "Rustic Delight",
+          "link": "https://github.com/PhantomWing/RusticDelight/wiki"
+        },
+        {
+          "title": "Storage Delight",
+          "link": "https://github.com/axperty/storagedelight/wiki"
+        },
+        {
+          "title": "Spanish Delight Refabricated",
+          "link": "https://modrinth.com/mod/spanish-delight-refabricated"
+        },
+        {
+          "title": "Ube's Delight",
+          "link": "https://chefmooon.github.io/ubesdelight/wiki/1.21.1/home"
+        },
+        {
+          "title": "Nullscape",
+          "link": "https://stardustlabs.miraheze.org/wiki/Nullscape"
+        },
+        {
+          "title": "Incendium",
+          "link": "https://stardustlabs.miraheze.org/wiki/Incendium"
+        },
+        {
+          "title": "Waystones",
+          "link": "https://modrinth.com/mod/waystones"
+        },
+        {
+          "title": "VeinMiner",
+          "link": "https://modrinth.com/datapack/veinminer-enchantment"
+        },
+        {
+          "title": "Tree Harvester",
+          "link": "https://modrinth.com/mod/tree-harvester"
+        },
+        {
+          "title": "Copper Hopper",
+          "link": "https://modrinth.com/mod/copper-hopper"
+        },
+        {
+          "title": "Armor Stand Editor",
+          "link": "https://modrinth.com/mod/armorstandeditor"
+        },
+        {
+          "title": "Item Signs",
+          "link": "https://modrinth.com/mod/item-signs"
+        },
+        {
+          "title": "Weapons Expanded",
+          "link": "https://modrinth.com/mod/weaponsexpanded"
+        },
+        {
+          "title": "Tool Trims",
+          "link": "https://modrinth.com/mod/tool-trims-mod"
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "title": "Путеводитель по миру",
+      "text": "Удобная стартовая статья для новичков и тех, кто возвращается в проект после паузы.",
+      "href": "/wiki/world-guide",
+      "category": "Путеводители",
+      "meta": "Основная статья",
+      "actionLabel": "Открыть"
+    },
+    {
+      "title": "Главная вики",
+      "text": "Каталог всех материалов и статей по миру Q-Verse.",
+      "href": "/wiki",
+      "category": "Навигация",
+      "meta": "Каталог",
+      "actionLabel": "Вернуться в каталог"
+    }
+  ]
+}

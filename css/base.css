@@ -1,109 +1,242 @@
+:root {
+  --color-bg-top: #1b1411;
+  --color-bg-bottom: #0e0b0a;
+  --color-text: #fff;
+  --color-text-soft: rgba(239, 223, 197, 0.78);
+  --color-text-muted: rgba(239, 223, 197, 0.62);
+  --color-accent: #8f0b13;
+  --color-accent-glow: rgba(192, 21, 28, 0.6);
+  --panel-bg: rgba(18, 13, 11, 0.68);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  --panel-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  --content-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: system-ui, sans-serif;
-    color: #fff;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #2a1a12 0%, transparent 60%),
+    linear-gradient(180deg, var(--color-bg-top), var(--color-bg-bottom));
+}
 
-    background:
-        radial-gradient(
-            1200px 600px at 50% -10%,
-            #2a1a12 0%,
-            transparent 60%
-        ),
-        linear-gradient(
-            180deg,
-            #1b1411,
-            #0e0b0a
-        );
+a {
+  color: inherit;
+}
 
-    min-height: 100vh;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 main {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .section {
-    max-width: 1200px;
-    margin: 120px auto;
-    padding: 0 24px;
+  max-width: var(--content-width);
+  margin: 120px auto;
+  padding: 0 24px;
 }
 
-h1, h2 {
-    text-align: center;
+h1,
+h2 {
+  text-align: center;
 }
 
 h2 {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
+}
+
+.panel,
+.glass {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 28px;
+  backdrop-filter: blur(14px);
+  box-shadow:
+    var(--panel-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.page-shell {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px 72px;
+}
+
+.page-main {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.page-main::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(143, 11, 19, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at left center,
+      rgba(239, 223, 197, 0.08),
+      transparent 25%
+    );
+}
+
+.page-header {
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.page-header-card {
+  padding: 48px;
+  text-align: center;
+}
+
+.page-card {
+  position: relative;
+  width: min(100%, 840px);
+  padding: 40px 32px;
+  text-align: center;
+}
+
+.page-eyebrow {
+  margin-bottom: 16px;
+  color: var(--color-accent);
+  font-size: 0.88rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.page-card h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.page-header-card h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+}
+
+.page-lead {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--color-text-soft);
+  line-height: 1.7;
+}
+
+.page-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.section-label {
+  margin-bottom: 12px;
+  color: var(--color-accent);
+  text-align: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  max-width: 760px;
+  margin: -20px auto 42px;
+  text-align: center;
+  color: var(--color-text-soft);
+  line-height: 1.7;
 }
 
 .red-glowing {
-        color: #8f0b13;
+  color: var(--color-accent);
+  text-shadow:
+    0 0 6px var(--color-accent-glow),
+    0 0 12px rgba(192, 21, 28, 0.4),
+    0 0 24px rgba(192, 21, 28, 0.2);
+  filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+}
 
-    text-shadow:
-        0 0 6px rgba(192, 21, 28, 0.6),
-        0 0 12px rgba(192, 21, 28, 0.4),
-        0 0 24px rgba(192, 21, 28, 0.2);
-
-    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+.cyan-glowing {
+  color: rgb(60, 207, 207);
+  text-shadow:
+    0 0 6px rgba(60, 207, 207, 0.65),
+    0 0 12px rgba(60, 207, 207, 0.4),
+    0 0 24px rgba(60, 207, 207, 0.2);
+  filter: drop-shadow(0 0 8px rgba(60, 207, 207, 0.5));
 }
 
 .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .links a {
-    color: rgba(239, 223, 197, 0.7);
-    text-decoration: none;
-    font-size: 14px;
-
-    transition: color 0.15s ease;
+  color: rgba(239, 223, 197, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s ease;
 }
 
-.links a:hover {
-    color: #8f0b13;
-
-    text-shadow:
-        0 0 6px rgba(192, 21, 28, 0.6),
-        0 0 12px rgba(192, 21, 28, 0.4),
-        0 0 24px rgba(192, 21, 28, 0.2);
-
-    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-    }
+.links a:hover,
+.inline-link:hover {
+  color: var(--color-accent);
+  text-shadow:
+    0 0 6px var(--color-accent-glow),
+    0 0 12px rgba(192, 21, 28, 0.4),
+    0 0 24px rgba(192, 21, 28, 0.2);
+  filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
 }
 
 .inline-link {
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    padding: 0 2px;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  padding: 0 2px;
 }
-.inline-link:hover {
-    color: #8f0b13;
 
-    text-shadow:
-        0 0 6px rgba(192, 21, 28, 0.6),
-        0 0 12px rgba(192, 21, 28, 0.4),
-        0 0 24px rgba(192, 21, 28, 0.2);
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 
-    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .page-card {
+    padding: 28px 20px;
+  }
+
+  .page-header-card {
+    padding: 20px;
+  }
 }
