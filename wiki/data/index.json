@@ -65,6 +65,16 @@
       "meta": "Актуально",
       "tags": ["моды", "механики", "крафты"],
       "actionLabel": "Открыть"
+    },
+    {
+      "title": "LifeSteal",
+      "text": "Подробная статья о системе сердец, deathban-механике, командах и крафтах предметов.",
+      "href": "/wiki/lifesteal",
+      "category": "guide",
+      "categoryLabel": "Путеводители",
+      "meta": "Актуально",
+      "tags": ["моды", "механики", "pvp"],
+      "actionLabel": "Открыть"
     }
   ]
 }

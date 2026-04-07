@@ -94,6 +94,46 @@ function renderEntryContent(item) {
   return renderEntryText(item?.text);
 }
 
+function renderMediaGallery(items) {
+  if (!Array.isArray(items) || items.length === 0) {
+    return "";
+  }
+
+  return `
+    <div class="wiki-media-grid">
+      ${items
+        .filter((mediaItem) => mediaItem?.src)
+        .map(
+          (mediaItem) => `
+            <figure class="wiki-media-card">
+              <div class="wiki-media-frame">
+                <img
+                  class="wiki-media-image"
+                  src="${escapeHtml(mediaItem.src)}"
+                  alt="${escapeHtml(mediaItem.alt || mediaItem.title || "Иллюстрация")}"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="wiki-media-caption">
+                ${
+                  mediaItem.title
+                    ? `<div class="wiki-media-title">${escapeHtml(mediaItem.title)}</div>`
+                    : ""
+                }
+                ${
+                  mediaItem.text
+                    ? `<p class="wiki-media-copy">${escapeHtml(mediaItem.text)}</p>`
+                    : ""
+                }
+              </figcaption>
+            </figure>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function renderHub() {
   const title = document.getElementById("wikiHubTitle");
   const lead = document.getElementById("wikiHubLead");
@@ -260,6 +300,13 @@ function getArticleSections() {
             item.link,
             item.meta,
             item.note,
+            ...(Array.isArray(item.media)
+              ? item.media.flatMap((mediaItem) => [
+                  mediaItem?.title,
+                  mediaItem?.text,
+                  mediaItem?.alt,
+                ])
+              : []),
             ...(Array.isArray(item.list) ? item.list : []),
           ].join(" ");
 
@@ -388,6 +435,7 @@ function renderArticle() {
                               .map((entry) => `<li>${escapeHtml(entry)}</li>`)
                               .join("")}</ul>`
                           : "";
+                        const media = renderMediaGallery(item.media);
 
                         return `
                           <article class="wiki-entry">
@@ -401,6 +449,7 @@ function renderArticle() {
                             </div>
                             ${renderEntryContent(item)}
                             ${list}
+                            ${media}
                             ${
                               item.note
                                 ? `<div class="wiki-entry-note">${escapeHtml(item.note)}</div>`

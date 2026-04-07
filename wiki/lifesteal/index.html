@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Q-Verse — Моды сервера</title>
+    <title>Q-Verse — LifeSteal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/assets/logo.png" />
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/wiki.css" />
   </head>
-  <body data-wiki-mode="article" data-wiki-source="/wiki/data/mods.json">
+  <body data-wiki-mode="article" data-wiki-source="/wiki/data/lifesteal.json">
     <header class="header" id="header">
       <div class="header-left">
         <a href="/">
@@ -40,18 +40,14 @@
       <section class="page-header section">
         <div class="page-header-card panel wiki-hero">
           <p id="wikiArticleEyebrow" class="page-eyebrow">Server Systems</p>
-          <h1 id="wikiArticleTitle">Моды сервера</h1>
+          <h1 id="wikiArticleTitle">LifeSteal</h1>
           <p id="wikiArticleLead" class="page-lead wiki-lead">
-            Справка по модам Q-Verse: какие механики они добавляют, на что
-            влияют и какие новые возможности открывают игрокам.
+            LifeSteal делает каждую схватку по-настоящему дорогой: за победу можно получить сердце, за смерть — потерять его, а если запас иссякнет, вернуться в мир получится только с помощью других игроков.
           </p>
 
           <div id="wikiArticleActions" class="page-actions">
             <a href="/wiki">
               <button class="btn primary">Назад в вики</button>
-            </a>
-            <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">
-              <button class="btn ghost">Открыть сборку</button>
             </a>
           </div>
         </div>
@@ -70,18 +66,15 @@
               id="wikiArticleSearch"
               class="wiki-search-input"
               type="search"
-              placeholder="Моды, механики, блоки, предметы..."
+              placeholder="LifeSteal, сердца, команды, крафты..."
             />
           </label>
-          <p id="wikiArticleSummary" class="wiki-sidebar-note">
-            Загрузка...
-          </p>
+          <p id="wikiArticleSummary" class="wiki-sidebar-note">Загрузка...</p>
         </aside>
 
         <section class="wiki-article-content">
           <div id="wikiArticleIntroCard" class="wiki-note panel">
-            Эта статья загружается из JSON-файла и поддерживает навигацию по
-            разделам, быстрые факты и фильтрацию содержимого.
+            Этот мод добавляет на сервер экономику сердец, предметы для усиления запаса здоровья и Beacon of Life, с которым можно вернуть выбывшего игрока обратно в игру.
           </div>
 
           <div id="wikiArticleContent" class="wiki-sections"></div>
@@ -90,7 +83,7 @@
         <aside class="wiki-sidebar panel wiki-sidebar-right">
           <h2>Навигация</h2>
           <p class="wiki-sidebar-note">
-            Быстрые переходы по разделам статьи о модах и механиках сервера.
+            Быстрые переходы по механикам и крафтам мода.
           </p>
           <nav id="wikiArticleNav" class="wiki-nav"></nav>
         </aside>
@@ -124,9 +117,7 @@
           <a href="/">Главная</a>
           <a href="/rules">Правила</a>
           <a href="/wiki">Вики</a>
-          <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">
-            Скачать сборку
-          </a>
+          <a href="https://github.com/QVerseInstitute/Q-Verse-Modpack/releases">Скачать сборку</a>
         </nav>
 
         <nav class="links">
@@ -143,15 +134,12 @@
           <div class="footer-copy">
             © 2026 Q-Verse<br />
             Made with <a class="red-glowing">❤️</a> by
-            <a href="https://github.com/Qu0i" class="profile-link cyan-glowing">
-              QuØi(¿!)™
-            </a>
+            <a href="https://github.com/Qu0i" class="profile-link cyan-glowing">QuØi(¿!)™</a>
           </div>
         </div>
 
         <div class="footer-disclaimer">
-          Not an official Minecraft product. Not approved by or associated with
-          Mojang Synergies AB or Microsoft Corporation.
+          Not an official Minecraft product. Not approved by or associated with Mojang Synergies AB or Microsoft Corporation.
         </div>
       </div>
     </footer>

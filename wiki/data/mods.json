@@ -11,7 +11,7 @@
       "type": "primary"
     },
     {
-      "label": "Открыть сборку",
+      "label": "Скачать сборку",
       "href": "https://github.com/QVerseInstitute/Q-Verse-Modpack/releases",
       "type": "ghost"
     }
@@ -166,6 +166,16 @@
             "Кастомизация инструментов",
             "Дополнительные бонусы"
           ]
+        },
+        {
+          "title": "LifeSteal",
+          "text": "Превращает сердца в ресурс: за убийства игроков можно получать дополнительное здоровье, за смерти — терять его, а при полном истощении запаса срабатывает deathban.",
+          "list": [
+            "Крафты Heart Fragment, Heart и Beacon of Life",
+            "Команда /withdraw для вывода сердец в предмет",
+            "Отдельная статья с механиками и скриншотами крафтов"
+          ],
+          "note": "Подробный разбор вынесен в отдельную статью: /wiki/lifesteal"
         }
       ]
     },
@@ -252,6 +262,10 @@
         {
           "title": "Tool Trims",
           "link": "https://modrinth.com/mod/tool-trims-mod"
+        },
+        {
+          "title": "LifeSteal",
+          "link": "https://modrinth.com/mod/lifestealfabric/version/FNAMbUI9"
         }
       ]
     }
