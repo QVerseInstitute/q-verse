@@ -27,7 +27,7 @@
 
 .card:hover {
     transform: translateY(-6px);
-    border-color: rgba(143, 11, 19, 0.24);
+    border-color: rgba(20, 155, 159, 0.24);
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
 }
 
@@ -55,7 +55,7 @@
 
 .card p {
     position: relative;
-    color: rgba(239, 223, 197, 0.78);
+    color: rgba(232, 255, 251, 0.78);
     line-height: 1.7;
 }
 

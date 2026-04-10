@@ -12,7 +12,7 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at top center, rgba(143, 11, 19, 0.18), transparent 42%),
+        radial-gradient(circle at top center, rgba(20, 155, 159, 0.18), transparent 42%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 55%);
     pointer-events: none;
 }
@@ -63,16 +63,16 @@
     align-items: center;
     padding: 8px 14px;
     border-radius: 999px;
-    background: rgba(143, 11, 19, 0.16);
-    border: 1px solid rgba(143, 11, 19, 0.28);
-    color: #efdfc5;
+    background: rgba(20, 155, 159, 0.16);
+    border: 1px solid rgba(20, 155, 159, 0.28);
+    color: #e8fffb;
     font-size: 0.86rem;
     line-height: 1;
 }
 
 .wiki-card-status,
 .wiki-entry-meta span:last-child {
-    color: rgba(239, 223, 197, 0.62);
+    color: rgba(232, 255, 251, 0.62);
     font-size: 0.92rem;
 }
 
@@ -81,7 +81,7 @@
 .wiki-section-copy,
 .wiki-entry-text,
 .wiki-note {
-    color: rgba(239, 223, 197, 0.78);
+    color: rgba(232, 255, 251, 0.78);
     line-height: 1.75;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .wiki-summary {
-    color: rgba(239, 223, 197, 0.62);
+    color: rgba(232, 255, 251, 0.62);
     white-space: nowrap;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .wiki-search-label {
-    color: rgba(239, 223, 197, 0.62);
+    color: rgba(232, 255, 251, 0.62);
     font-size: 0.85rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -153,13 +153,13 @@
 }
 
 .wiki-search-input::placeholder {
-    color: rgba(239, 223, 197, 0.42);
+    color: rgba(232, 255, 251, 0.42);
 }
 
 .wiki-search-input:focus {
-    border-color: rgba(143, 11, 19, 0.5);
+    border-color: rgba(20, 155, 159, 0.5);
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 0 4px rgba(143, 11, 19, 0.12);
+    box-shadow: 0 0 0 4px rgba(20, 155, 159, 0.12);
 }
 
 .wiki-filters {
@@ -177,7 +177,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.03);
-    color: #efdfc5;
+    color: #e8fffb;
     font-size: 0.88rem;
     line-height: 1;
     cursor: pointer;
@@ -191,7 +191,7 @@
 .wiki-filter:focus-visible,
 .wiki-filter.is-active {
     transform: translateY(-2px);
-    border-color: rgba(239, 223, 197, 0.22);
+    border-color: rgba(232, 255, 251, 0.22);
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -219,7 +219,7 @@
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    color: rgba(239, 223, 197, 0.72);
+    color: rgba(232, 255, 251, 0.72);
     font-size: 0.82rem;
 }
 
@@ -227,7 +227,7 @@
     padding: 22px;
     border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 22px;
-    color: rgba(239, 223, 197, 0.72);
+    color: rgba(232, 255, 251, 0.72);
     line-height: 1.7;
 }
 
@@ -250,7 +250,7 @@
 }
 
 .wiki-fact-value {
-    color: #efdfc5;
+    color: #e8fffb;
     font-size: 1.05rem;
     line-height: 1.6;
 }
@@ -281,7 +281,7 @@
 }
 
 .wiki-sidebar-note {
-    color: rgba(239, 223, 197, 0.62);
+    color: rgba(232, 255, 251, 0.62);
     line-height: 1.6;
 }
 
@@ -294,7 +294,7 @@
     display: grid;
     gap: 6px;
     padding: 12px 14px;
-    color: rgba(239, 223, 197, 0.78);
+    color: rgba(232, 255, 251, 0.78);
     text-decoration: none;
     border-radius: 14px;
     background: rgba(255, 255, 255, 0.02);
@@ -309,12 +309,12 @@
 .wiki-nav-link:hover,
 .wiki-nav-link:focus-visible {
     color: #fff;
-    background: rgba(143, 11, 19, 0.18);
+    background: rgba(20, 155, 159, 0.18);
     transform: translateX(4px);
 }
 
 .wiki-nav-link small {
-    color: rgba(239, 223, 197, 0.58);
+    color: rgba(232, 255, 251, 0.58);
     font-size: 0.78rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -353,7 +353,7 @@
 }
 
 .wiki-section-id {
-    color: rgba(239, 223, 197, 0.4);
+    color: rgba(232, 255, 251, 0.4);
     font-size: 0.82rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -381,19 +381,19 @@
 }
 
 .wiki-entry-title {
-    color: #efdfc5;
+    color: #e8fffb;
     font-size: 1.05rem;
 }
 
 .wiki-entry-meta {
-    color: rgba(239, 223, 197, 0.58);
+    color: rgba(232, 255, 251, 0.58);
     font-size: 0.88rem;
 }
 
 .wiki-entry-list {
     margin-top: 12px;
     padding-left: 18px;
-    color: rgba(239, 223, 197, 0.78);
+    color: rgba(232, 255, 251, 0.78);
     line-height: 1.65;
 }
 
@@ -405,9 +405,9 @@
     margin-top: 14px;
     padding: 14px 16px;
     border-radius: 16px;
-    border: 1px solid rgba(143, 11, 19, 0.18);
-    background: rgba(143, 11, 19, 0.08);
-    color: rgba(239, 223, 197, 0.78);
+    border: 1px solid rgba(20, 155, 159, 0.18);
+    background: rgba(20, 155, 159, 0.08);
+    color: rgba(232, 255, 251, 0.78);
     line-height: 1.7;
 }
 
@@ -416,9 +416,9 @@
     align-items: center;
     width: fit-content;
     margin-top: 2px;
-    color: #efdfc5;
+    color: #e8fffb;
     text-decoration: none;
-    border-bottom: 1px dashed rgba(239, 223, 197, 0.4);
+    border-bottom: 1px dashed rgba(232, 255, 251, 0.4);
     line-height: 1.7;
     word-break: break-all;
 }
@@ -426,7 +426,7 @@
 .wiki-entry-link:hover,
 .wiki-entry-link:focus-visible {
     color: var(--color-accent);
-    border-bottom-color: rgba(143, 11, 19, 0.58);
+    border-bottom-color: rgba(20, 155, 159, 0.58);
 }
 
 .wiki-media-grid {
@@ -442,7 +442,7 @@
     border-radius: 20px;
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
-        rgba(22, 18, 17, 0.88);
+        rgba(5, 25, 27, 0.88);
     border: 1px solid rgba(255, 255, 255, 0.06);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
@@ -454,7 +454,7 @@
     padding: 14px;
     border-radius: 16px;
     background:
-        radial-gradient(circle at top, rgba(143, 11, 19, 0.14), transparent 54%),
+        radial-gradient(circle at top, rgba(20, 155, 159, 0.14), transparent 54%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -473,14 +473,14 @@
 }
 
 .wiki-media-title {
-    color: #efdfc5;
+    color: #e8fffb;
     font-size: 1rem;
     font-weight: 600;
 }
 
 .wiki-media-copy {
     margin: 0;
-    color: rgba(239, 223, 197, 0.72);
+    color: rgba(232, 255, 251, 0.72);
     line-height: 1.65;
 }
 

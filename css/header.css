@@ -7,14 +7,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 48px;
-    background: rgba(10, 8, 7, 0.35);
+    background: rgba(5, 25, 27, 0.42);
     backdrop-filter: blur(8px);
     transition: background 0.3s ease, box-shadow 0.3s ease;
     z-index: 100;
 }
 
 .header.scrolled {
-    background: rgba(10, 8, 7, 0.75);
+    background: rgba(5, 25, 27, 0.82);
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -30,7 +30,7 @@
 
 .nav a {
     position: relative;
-    color: #EFDFC5;
+    color: var(--color-text-bright);
     padding: 15px 30px;
     margin: 10px;
     cursor: pointer;
@@ -44,12 +44,12 @@
 
 .nav a:hover,
 .nav a.active {
-    color: #8f0b13;
+    color: var(--color-accent);
     text-shadow:
-        0 0 6px rgba(192, 21, 28, 0.6),
-        0 0 12px rgba(192, 21, 28, 0.4),
-        0 0 24px rgba(192, 21, 28, 0.2);
-    filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+        0 0 6px rgba(63, 192, 198, 0.6),
+        0 0 12px rgba(63, 192, 198, 0.4),
+        0 0 24px rgba(63, 192, 198, 0.2);
+    filter: drop-shadow(0 0 8px rgba(63, 192, 198, 0.5));
 }
 
 .nav a.active { pointer-events: none; }

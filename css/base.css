@@ -1,12 +1,15 @@
 :root {
-  --color-bg-top: #1b1411;
-  --color-bg-bottom: #0e0b0a;
+  --color-bg-top: #09292b;
+  --color-bg-bottom: #051315;
   --color-text: #fff;
-  --color-text-soft: rgba(239, 223, 197, 0.78);
-  --color-text-muted: rgba(239, 223, 197, 0.62);
-  --color-accent: #8f0b13;
-  --color-accent-glow: rgba(192, 21, 28, 0.6);
-  --panel-bg: rgba(18, 13, 11, 0.68);
+  --color-text-bright: #e8fffb;
+  --color-text-soft: rgba(232, 255, 251, 0.78);
+  --color-text-muted: rgba(232, 255, 251, 0.62);
+  --color-accent: #149B9F;
+  --color-accent-dark: #167B7E;
+  --color-accent-light: #3FC0C6;
+  --color-accent-glow: rgba(63, 192, 198, 0.6);
+  --panel-bg: rgba(5, 25, 27, 0.72);
   --panel-border: rgba(255, 255, 255, 0.1);
   --panel-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
   --content-width: 1200px;
@@ -28,7 +31,7 @@ body {
   line-height: 1.5;
   color: var(--color-text);
   background:
-    radial-gradient(1200px 600px at 50% -10%, #2a1a12 0%, transparent 60%),
+    radial-gradient(1200px 600px at 50% -10%, #0d3d40 0%, transparent 60%),
     linear-gradient(180deg, var(--color-bg-top), var(--color-bg-bottom));
 }
 
@@ -93,12 +96,12 @@ h2 {
   background:
     radial-gradient(
       circle at top right,
-      rgba(143, 11, 19, 0.18),
+      rgba(20, 155, 159, 0.18),
       transparent 30%
     ),
     radial-gradient(
       circle at left center,
-      rgba(239, 223, 197, 0.08),
+      rgba(232, 255, 251, 0.08),
       transparent 25%
     );
 }
@@ -172,21 +175,21 @@ h2 {
 }
 
 .red-glowing {
-  color: var(--color-accent);
+  color: #8F0B13;
   text-shadow:
-    0 0 6px var(--color-accent-glow),
+    0 0 6px rgba(192, 21, 28, 0.6),
     0 0 12px rgba(192, 21, 28, 0.4),
     0 0 24px rgba(192, 21, 28, 0.2);
   filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
 }
 
 .cyan-glowing {
-  color: rgb(60, 207, 207);
+  color: var(--color-accent-light);
   text-shadow:
-    0 0 6px rgba(60, 207, 207, 0.65),
-    0 0 12px rgba(60, 207, 207, 0.4),
-    0 0 24px rgba(60, 207, 207, 0.2);
-  filter: drop-shadow(0 0 8px rgba(60, 207, 207, 0.5));
+    0 0 6px rgba(63, 192, 198, 0.65),
+    0 0 12px rgba(63, 192, 198, 0.4),
+    0 0 24px rgba(63, 192, 198, 0.2);
+  filter: drop-shadow(0 0 8px rgba(63, 192, 198, 0.5));
 }
 
 .links {
@@ -196,7 +199,7 @@ h2 {
 }
 
 .links a {
-  color: rgba(239, 223, 197, 0.7);
+  color: rgba(232, 255, 251, 0.7);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.15s ease;
@@ -207,9 +210,9 @@ h2 {
   color: var(--color-accent);
   text-shadow:
     0 0 6px var(--color-accent-glow),
-    0 0 12px rgba(192, 21, 28, 0.4),
-    0 0 24px rgba(192, 21, 28, 0.2);
-  filter: drop-shadow(0 0 8px rgba(192, 21, 28, 0.5));
+    0 0 12px rgba(63, 192, 198, 0.4),
+    0 0 24px rgba(63, 192, 198, 0.2);
+  filter: drop-shadow(0 0 8px rgba(63, 192, 198, 0.5));
 }
 
 .inline-link {

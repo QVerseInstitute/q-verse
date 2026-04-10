@@ -26,7 +26,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top, rgba(143, 11, 19, 0.16), transparent 42%),
+    radial-gradient(circle at top, rgba(20, 155, 159, 0.16), transparent 42%),
     linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.03),
@@ -37,7 +37,7 @@
 
 .hero-kicker {
   margin-bottom: 16px;
-  color: #8f0b13;
+  color: var(--color-accent);
   font-size: 0.88rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
   height: 260px;
   left: 6%;
   top: 18%;
-  background: radial-gradient(circle, rgba(143, 11, 19, 0.28), transparent 68%);
+  background: radial-gradient(circle, rgba(20, 155, 159, 0.28), transparent 68%);
 }
 
 .hero-orb-right {
@@ -66,7 +66,7 @@
   bottom: 12%;
   background: radial-gradient(
     circle,
-    rgba(239, 223, 197, 0.12),
+    rgba(232, 255, 251, 0.12),
     transparent 70%
   );
 }
@@ -103,7 +103,7 @@
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.09);
   background: rgba(255, 255, 255, 0.04);
-  color: rgba(239, 223, 197, 0.82);
+  color: rgba(232, 255, 251, 0.82);
   font-size: 0.95rem;
 }
 
@@ -138,14 +138,14 @@
 .hero-meta-label {
   display: block;
   margin-bottom: 8px;
-  color: rgba(239, 223, 197, 0.56);
+  color: rgba(232, 255, 251, 0.56);
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .hero-meta-item strong {
-  color: #efdfc5;
+  color: #e8fffb;
   font-size: 1rem;
 }
 
@@ -157,7 +157,7 @@
   backdrop-filter: blur(10px);
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #efdfc5;
+  color: #e8fffb;
 
   display: inline-flex;
   align-items: center;
@@ -170,8 +170,8 @@
 }
 
 .ip-box:hover {
-  border-color: rgba(143, 11, 19, 0.6);
-  box-shadow: 0 0 18px rgba(143, 11, 19, 0.35);
+  border-color: rgba(20, 155, 159, 0.6);
+  box-shadow: 0 0 18px rgba(20, 155, 159, 0.35);
 }
 
 .ip-box:active {
@@ -179,9 +179,9 @@
 }
 
 .ip-box.copied {
-  background: rgba(143, 11, 19, 0.25);
-  border-color: rgba(143, 11, 19, 0.6);
-  box-shadow: 0 0 0 1px rgba(143, 11, 19, 0.4);
+  background: rgba(20, 155, 159, 0.25);
+  border-color: rgba(20, 155, 159, 0.6);
+  box-shadow: 0 0 0 1px rgba(20, 155, 159, 0.4);
 }
 
 .ip-box.copied .ip-icon {
